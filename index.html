@@ -2,100 +2,201 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>herHack</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">-->
+    <link href='https://fonts.googleapis.com/css?family=Product+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="home" class="background">
-        <div id="homeOverlay">
-            <div class="triangle">
-                <div class="bottomTriangle">
-                </div>
-                <div class="heading bottomContent">
-                    <h2>#HERHACK</h2>
-                    <h4>WOMENTECHMAKERS</h4>
-                </div>
+<nav style="background-color: transparent;z-index: 50;">
+    <div class="nav-wrapper">
+        <ul class="right hide-on-med-and-down">
+            <li><a href="#aboutWTM">ABOUT US</a></li>
+            <li><a href="#aboutHerHack">HER HACK</a></li>
+            <li><a href="#prizes">PRIZES</a></li>
+            <li><a href="#herSponsers">SPONSORS</a></li>
+        </ul>
+    </div>
+</nav>
+<a href="#" data-activates="mobile-demo" class="button-collapse hide-on-large-only"
+   style="position: fixed;z-index: 1000;padding: 20px;"><i class="material-icons"
+                                                           style="font-size: 2.5rem;color: white">menu</i></a>
+<ul class="side-nav" id="mobile-demo">
+    <li><a href="#aboutWTM">ABOUT US</a></li>
+    <li><a href="#aboutHerHack">HER HACK</a></li>
+    <li><a href="#prizes">PRIZES</a></li>
+    <li><a href="#herSponsers">SPONSORS</a></li>
+</ul>
+<div id="home" class="background">
+    <div class="row" style="margin-bottom: 0px;">
+        <div class="col s8 push-s2 m4 push-m2" style="position: absolute;z-index: 30;top:30vh;">
+            <img src="images/WTM%20white%20logo.png" class="img WTMlogo" style="display: block;margin:auto;">
+        </div>
+    </div>
+    <div id="homeOverlay">
+        <div class="triangle hide-on-small-only">
+            <div class="bottomTriangle">
+            </div>
+            <div class="heading bottomContent">
+                <h2>#HERHACK</h2>
+                <h4>WOMENTECHMAKERS</h4>
+            </div>
+        </div>
+        <div class="row show-on-small hide-on-med-and-up">
+            <div class="col s12 mobileHeadingBottom">
+                <h4>WOMENTECHMAKERS</h4>
             </div>
         </div>
     </div>
-    <div id="aboutWTM" class="background">
-        <div class="topTriangle">
-            <div class="UpperTriangle"></div>
-            <div class="row headCover">
-                <div class="col m4 heading">
-                    <h1>ABOUT</h1>
-                    <h4>WOMENTECHMAKERS</h4>
-                </div>
-            </div>
-        </div>
+</div>
+<div id="aboutWTM" class="background">
+    <div class="topTriangle hide-on-small-only">
+        <div class="UpperTriangle"></div>
         <div class="row">
-            <div class="col s12 m6 push-m5 content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac lorem nec augue finibus blandit. Nam viverra in ante a ultricies. Donec efficitur porta vestibulum. Phasellus convallis ac nulla vitae ultrices. Pellentesque ut orci eu nulla molestie dictum at sit amet neque. Curabitur fermentum placerat congue. Nulla rutrum sapien eget sem lacinia malesuada. Quisque placerat nisi sed nisl scelerisque molestie. Etiam a pellentesque arcu, vel luctus orci. Praesent maximus dui ac malesuada porta. Cras consequat est ex, nec tincidunt mi mattis pharetra. Donec in mattis magna. Cras urna purus, cursus vel enim id, maximus porttitor massa. Aliquam erat volutpat.</p>
+            <div class="col m1 push-m1 heading headCover">
+                <h1>ABOUT</h1>
+                <h5>WOMENTECHMAKERS</h5>
             </div>
         </div>
     </div>
-    <div id="aboutHerHack" class="background">
-        <div class="row contentBox">
-            <div class="col s12 m6 content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac lorem nec augue finibus blandit. Nam viverra in ante a ultricies. Donec efficitur porta vestibulum. Phasellus convallis ac nulla vitae ultrices. Pellentesque ut orci eu nulla molestie dictum at sit amet neque. Curabitur fermentum placerat congue. Nulla rutrum sapien eget sem lacinia malesuada. Quisque placerat nisi sed nisl scelerisque molestie. Etiam a pellentesque arcu, vel luctus orci. Praesent maximus dui ac malesuada porta. Cras consequat est ex, nec tincidunt mi mattis pharetra. Donec in mattis magna. Cras urna purus, cursus vel enim id, maximus porttitor massa. Aliquam erat volutpat.</p>
+    <div class="row show-on-small hide-on-med-and-up">
+        <div class="col s12 mobileHeadingTop">
+            <h4>ABOUT US</h4>
+        </div>
+    </div>
+    <div class="row contentBox">
+        <div class="col s12 m6 push-m5 content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac lorem nec augue finibus blandit. Nam
+                viverra in ante a ultricies. Donec efficitur porta vestibulum. Phasellus convallis ac nulla vitae
+                ultrices. Pellentesque ut orci eu nulla molestie dictum at sit amet neque. Curabitur fermentum placerat
+                congue. Nulla rutrum sapien eget sem lacinia malesuada. Quisque placerat nisi sed nisl scelerisque
+                molestie. Etiam a pellentesque arcu, vel luctus orci. Praesent maximus dui ac malesuada porta. Cras
+                consequat est ex, nec tincidunt mi mattis pharetra. Donec in mattis magna. Cras urna purus, cursus vel
+                enim id, maximus porttitor massa. Aliquam erat volutpat.</p>
+        </div>
+    </div>
+</div>
+<div id="aboutHerHack" class="background">
+    <div class="row show-on-small hide-on-med-and-up">
+        <div class="col s12 mobileHeadingTop" style="background-color: rgb(69, 150, 251);">
+            <h4>HER HACK</h4>
+        </div>
+    </div>
+    <div class="row contentBox">
+        <div class="col s12 m6 content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac lorem nec augue finibus blandit. Nam
+                viverra in ante a ultricies. Donec efficitur porta vestibulum. Phasellus convallis ac nulla vitae
+                ultrices. Pellentesque ut orci eu nulla molestie dictum at sit amet neque. Curabitur fermentum placerat
+                congue. Nulla rutrum sapien eget sem lacinia malesuada. Quisque placerat nisi sed nisl scelerisque
+                molestie. Etiam a pellentesque arcu, vel luctus orci. Praesent maximus dui ac malesuada porta. Cras
+                consequat est ex, nec tincidunt mi mattis pharetra. Donec in mattis magna. Cras urna purus, cursus vel
+                enim id, maximus porttitor massa. Aliquam erat volutpat.</p>
+        </div>
+    </div>
+    <div class="triangleBottom hide-on-small-only">
+        <div class="herHacktriangle"></div>
+        <div class="row">
+            <div class="heading bottomContent">
+                <h1>ABOUT</h1>
+                <h4>#HERHACK</h4>
             </div>
         </div>
-        <div class="triangleBottom">
-            <div class="herHacktriangle"></div>
-            <div class="row">
-                <div class="heading bottomContent">
-                    <h1>ABOUT</h1>
-                    <h4>#HERHACK</h4>
+    </div>
+</div>
+<div id="prizes" class="background">
+    <div class="topTriangle hide-on-small-only">
+        <div class="UpperTriangle" style="border-top-color: rgb(0, 196, 164);"></div>
+        <div class="row">
+            <div class="col m2 push-m1 heading headCover">
+                <h1>PRIZES</h1>
+            </div>
+        </div>
+    </div>
+    <div class="row show-on-small hide-on-med-and-up">
+        <div class="col s12 mobileHeadingTop">
+            <h4>PRIZES</h4>
+        </div>
+    </div>
+    <div class="row contentBox">
+        <div class="col l2 push-l5 hide-on-small-only" id="prizesPic">
+            <img src="./images/Group%201.png">
+        </div>
+        <div class="col s12 m6 push-m5 l3 push-l6 content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac lorem nec augue finibus blandit. Nam
+                viverra in ante a ultricies. Donec efficitur porta vestibulum. Phasellus convallis ac nulla vitae
+                ultrices. Pellentesque ut orci eu nulla molestie dictum at sit amet neque. Curabitur fermentum placerat
+                congue. Nulla rutrum sapien eget sem lacinia malesuada. Quisque placerat nisi sed nisl scelerisque
+                molestie. Etiam a pellentesque arcu, vel luctus orci. Praesent maximus dui ac malesuada porta. Cras
+                consequat est ex, nec tincidunt mi mattis pharetra. Donec in mattis magna. Cras urna purus, cursus vel
+                enim id, maximus porttitor massa. Aliquam erat volutpat.</p>
+        </div>
+    </div>
+</div>
+<div id="herRegistration" class="background">
+    <div class="row contentBox">
+        <div class="col s12 m6 content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac lorem nec augue finibus blandit. Nam
+                viverra in ante a ultricies. Donec efficitur porta vestibulum. Phasellus convallis ac nulla vitae
+                ultrices. Pellentesque ut orci eu nulla molestie dictum at sit amet neque. Curabitur fermentum placerat
+                congue. Nulla rutrum sapien eget sem lacinia malesuada. Quisque placerat nisi sed nisl scelerisque
+                molestie. Etiam a pellentesque arcu, vel luctus orci. Praesent maximus dui ac malesuada porta. Cras
+                consequat est ex, nec tincidunt mi mattis pharetra. Donec in mattis magna. Cras urna purus, cursus vel
+                enim id, maximus porttitor massa. Aliquam erat volutpat.</p>
+        </div>
+    </div>
+    <div class="row show-on-small hide-on-med-and-up">
+        <div class="col s12 mobileHeadingTop" style="background-color: rgb(69, 150, 251);">
+            <h4>REGISTRATION</h4>
+        </div>
+    </div>
+    <!--<div class="row hide-on-small-only">-->
+    <!--<div class="col m2 push-m1 heading headCover">-->
+    <!--<h1>REGISTRATION</h1>-->
+    <!--</div>-->
+    <!--</div>-->
+    <div class="triangleBottom hide-on-small-only">
+        <div class="herHacktriangle" style="border-bottom-color: rgb(0, 196, 164);"></div>
+        <div class="row">
+            <div class="heading bottomContent">
+                <h1>#HER</h1>
+                <h4>REGISTRATION</h4>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="herSponsers" class="background">
+    <div class="topTriangle hide-on-small-only">
+        <div class="UpperTriangle" style="border-top-color:rgb(69, 150, 251);"></div>
+        <div class="row ">
+            <div class="col m2 push-m1 heading headCover">
+                <h1>#HER</h1>
+                <h4>SPONSORS</h4>
+            </div>
+        </div>
+    </div>
+    <div class="row show-on-small hide-on-med-and-up">
+        <div class="col s12 mobileHeadingTop">
+            <h4>SPONSORS</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 m6 push-m5">
+            <div class="row ">
+                <div class="col s12 m3">
+                    <img src="images/google.png" class="img">
+                </div>
+                <div class="col s12 m3">
+                    <img src="images/forbesLogo.png" class="img">
                 </div>
             </div>
         </div>
     </div>
-    <div id="prizes" class="background">
-        <div class="topTriangle">
-            <div class="UpperTriangle" style="border-top-color: rgb(0, 196, 164);"></div>
-            <div class="row headCover">
-                <div class="col m4 heading">
-                    <h1>PRIZES</h1>
-                </div>
-            </div>
-        </div>
-        <div class="row contentBox">
-            <div class="col l2 push-l5" id="prizesPic">
-                <img src="./images/Group%201.png">
-            </div>
-            <div class="col s12 m6 push-m5 l3 push-l6 content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac lorem nec augue finibus blandit. Nam viverra in ante a ultricies. Donec efficitur porta vestibulum. Phasellus convallis ac nulla vitae ultrices. Pellentesque ut orci eu nulla molestie dictum at sit amet neque. Curabitur fermentum placerat congue. Nulla rutrum sapien eget sem lacinia malesuada. Quisque placerat nisi sed nisl scelerisque molestie. Etiam a pellentesque arcu, vel luctus orci. Praesent maximus dui ac malesuada porta. Cras consequat est ex, nec tincidunt mi mattis pharetra. Donec in mattis magna. Cras urna purus, cursus vel enim id, maximus porttitor massa. Aliquam erat volutpat.</p>
-            </div>
-        </div>
-    </div>
-    <div id="herRegistration" class="background">
-        <div class="row contentBox">
-            <div class="col s12 m6 content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac lorem nec augue finibus blandit. Nam viverra in ante a ultricies. Donec efficitur porta vestibulum. Phasellus convallis ac nulla vitae ultrices. Pellentesque ut orci eu nulla molestie dictum at sit amet neque. Curabitur fermentum placerat congue. Nulla rutrum sapien eget sem lacinia malesuada. Quisque placerat nisi sed nisl scelerisque molestie. Etiam a pellentesque arcu, vel luctus orci. Praesent maximus dui ac malesuada porta. Cras consequat est ex, nec tincidunt mi mattis pharetra. Donec in mattis magna. Cras urna purus, cursus vel enim id, maximus porttitor massa. Aliquam erat volutpat.</p>
-            </div>
-        </div>
-        <div class="triangleBottom">
-            <div class="herHacktriangle" style="border-bottom-color: rgb(0, 196, 164);"></div>
-            <div class="row">
-                <div class="heading bottomContent">
-                    <h1>#HER</h1>
-                    <h4>REGISTRATION</h4>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="herSponsers" class="background">
-        <div class="topTriangle">
-            <div class="UpperTriangle" style="border-top-color:rgb(69, 150, 251);"></div>
-            <div class="row headCover">
-                <div class="col m4 heading">
-                    <h1>#HER</h1>
-                    <h4>SPONSORS</h4>
-                </div>
-            </div>
-        </div>
-    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

@@ -3,9 +3,15 @@
     padding: 0px;
     margin: 0px;
 }
+nav
+{
+    background-color: transparent;
+    position: absolute;
+}
 .heading
 {
-    font-family: 'Lato', sans-serif;
+    font-family: Product Sans,sans-serif;
+    font-weight: bold;
     z-index: 20;
     color: #ffffff;
 }
@@ -45,7 +51,7 @@
     border-bottom: 80vh solid rgba(0, 196, 164, 0.65);
     border-left: 50vw solid transparent;
     position: absolute;
-    left:50vw;
+    right:0px;
     bottom: 0px;
     z-index:10;
 }
@@ -64,6 +70,7 @@
 #aboutWTM
 {
     background-color:rgb(0, 196, 164) ;
+    position: relative;
 }
 .topTriangle
 {
@@ -78,14 +85,15 @@
     border-top: 80vh solid rgb(69, 150, 251);
     border-right: 50vw solid transparent;
     position: absolute;
-    left: 0px;
+    right: 50vw;
     top: 0px;
     z-index:0;
 }
 .content
 {
     color: white;
-    font-family: 'Raleway', sans-serif;
+    font-family: Product Sans,sans-serif;
+    font-weight: normal;
 }
 #aboutHerHack
 {
@@ -99,7 +107,7 @@
     border-bottom: 80vh solid rgb(69, 150, 251);
     border-left: 50vw solid transparent;
     position: absolute;
-    left:50vw;
+    right: 0px;
     bottom: 0px;
     z-index: 20;
 }
@@ -136,4 +144,68 @@
 {
     background-color: rgb(0, 196, 164);
     position: relative;
+}
+.img
+{
+    height:80px;
+    width:auto;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center center;
+    display: block;
+    margin:10px auto;
+
+}
+.WTMlogo
+{
+    height:35vh;
+    width: auto;
+}
+.mobileHeadingBottom,.mobileHeadingTop
+{
+    position: absolute;
+    color:#ffffff;
+    text-align: center;
+    bottom: 0px;
+    background-color:rgb(0, 196, 164) ;
+}
+.mobileHeadingTop
+{
+    top:0px;
+    position: relative;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+nav
+{
+    box-shadow: none !important;
+    -webkit-box-shadow:none !important;
+}
+@media only screen and (max-width: 500px)
+{
+    #herRegistration
+    {
+        background-color:rgb(0, 196, 164);
+    }
+    #herSponsers
+    {
+        background-color: rgb(69, 150, 251);
+    }
+    .img
+    {
+        height:50px;
+    }
+    .WTMlogo
+    {
+        height: 25vh;
+    }
+    #aboutWTM
+    {
+        background-color: rgb(69, 150, 251)!important;
+    }
+
 }
