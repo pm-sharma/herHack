@@ -8,20 +8,11 @@
     <link rel="icon" type="image/png" href="./images/wtm.png">
     <link href='https://fonts.googleapis.com/css?family=Product+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<nav style="background-color: transparent;z-index: 50;">
-    <div class="nav-wrapper">
-        <ul class="right hide-on-med-and-down">
-            <li><a href="#aboutWTM">ABOUT US</a></li>
-            <li><a href="#aboutHerHack">HER HACK</a></li>
-            <li><a href="#prizes">PRIZES</a></li>
-            <li><a href="#herSponsers">SPONSORS</a></li>
-        </ul>
-    </div>
-</nav>
 <a href="#" data-activates="mobile-demo" class="button-collapse hide-on-large-only"
    style="position: fixed;z-index: 990;padding: 20px;"><i class="material-icons" style="font-size: 2.5rem;color: white">menu</i></a>
 <ul class="side-nav" id="mobile-demo">
@@ -30,7 +21,18 @@
     <li><a href="#prizes">PRIZES</a></li>
     <li><a href="#herSponsers">SPONSORS</a></li>
 </ul>
-<div id="home" class="background">
+<div id="fullpage">
+<nav style="background-color: transparent;z-index: 50;">
+    <div class="nav-wrapper">
+        <ul class="right hide-on-med-and-down">
+            <li><a href="#aboutWTMAnchor">ABOUT US</a></li>
+            <li><a href="#aboutHerHackAnchor">HER HACK</a></li>
+            <li><a href="#prizesAnchor">PRIZES</a></li>
+            <li><a href="#herSponsorsAnchor">SPONSORS</a></li>
+        </ul>
+    </div>
+</nav>
+<div id="home" class="section">
     <div class="row" style="margin-bottom: 0px;">
         <div class="col s8 push-s2 m4 push-m2" style="position: absolute;z-index: 30;top:30vh;">
             <img src="images/WTM%20white%20logo.png" class="img WTMlogo responsive-img" style="display: block;margin:auto;">
@@ -52,7 +54,7 @@
         </div>
     </div>
 </div>
-<div id="aboutWTM" class="background">
+<div id="aboutWTM" class="section">
     <div class="topTriangle hide-on-small-only">
         <div class="UpperTriangle"></div>
         <div class="row">
@@ -73,7 +75,7 @@
         </div>
     </div>
 </div>
-<div id="aboutHerHack" class="background">
+<div id="aboutHerHack" class="section">
     <div class="row show-on-small hide-on-med-and-up">
         <div class="col s12 mobileHeadingTop" style="background-color: rgb(69, 150, 251);">
             <h1>HER HACK</h1>
@@ -95,7 +97,7 @@
         </div>
     </div>
 </div>
-<div id="prizes" class="background">
+<div id="prizes" class="section">
     <div class="topTriangle hide-on-small-only">
         <div class="UpperTriangle" style="border-top-color: rgb(0, 196, 164);"></div>
         <div class="row">
@@ -110,24 +112,20 @@
         </div>
     </div>
     <div class="row contentBox">
-        <div class="col l2 push-l5 hide-on-med-and-down" id="prizesPic" style="margin-top:20px;">
+        <div class="col m2 push-m5 hide-on-small-only" id="prizesPic" style="margin-top:20px;">
             <img src="./images/Group%201.png" class="responsive-img">
         </div>
-        <div class="col s12 m6 push-m5 l4 push-l5 content">
+        <div class="col s12 m4 push-m5 content">
             <p>Participants will be be evaluated particularly in Web Development, Android and UI/UX domains.</p>
             <p>Top contestant team in each domain bags prizes worth 3K.</p>
             <p>Top all girls team will also be rewarded.</p>
         </div>
     </div>
 </div>
-<div id="herRegistration" class="background">
+<div id="herRegistration" class="section">
     <div class="row contentBox">
         <div class="col s12 m6 push-m1 content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac lorem nec augue finibus blandit. Nam
-                viverra in ante a ultricies. Donec efficitur porta vestibulum. Phasellus convallis ac nulla vitae
-                ultrices. Pellentesque ut orci eu nulla molestie dictum at sit amet neque. Curabitur fermentum placerat
-                congue. Nulla rutrum sapien eget sem lacinia malesuada. Quisque placerat nisi sed nisl scelerisque
-                molestie. Etiam a pellentesque arcu, vel luctus orci.</p>
+            <h2>COMING SOON!</h2>
         </div>
     </div>
     <div class="row show-on-small hide-on-med-and-up">
@@ -150,7 +148,7 @@
         </div>
     </div>
 </div>
-<div id="herSponsers" class="background">
+<div id="herSponsors" class="section">
     <div class="topTriangle hide-on-small-only">
         <div class="UpperTriangle" style="border-top-color:rgb(69, 150, 251);"></div>
         <div class="row ">
@@ -169,17 +167,16 @@
         <div class="col s12 m6 push-m3">
             <div class="row ">
                 <div class="col s12 m12 l4">
-                    <img src="images/google.png" class="img">
-                </div>
-                <div class="col s12 m12 l4">
-                    <img src="images/forbesLogo.png" class="img">
+                    <img src="images/jetbrains.png" class="img">
                 </div>
             </div>
         </div>
     </div>
 </div>
+</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script src="js/jquery.fullPage.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
