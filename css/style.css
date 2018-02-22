@@ -225,6 +225,10 @@ nav {
 {
     padding:0;
 }
+#fp-nav ul li a span
+{
+    background: #ffffff;
+}
 @media only screen and (max-width: 600px) {
     /*.col.bot.s12.mobileHeadingBottom {*/
         /*bottom: 50px;*/
