@@ -260,4 +260,7 @@ nav {
     html.fp-enabled, .fp-enabled body{
         overflow-y: scroll;
     }
+    ul{
+        display: none;
+    }
 }

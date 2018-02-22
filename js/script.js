@@ -5,7 +5,7 @@ $( document ).ready(function(){
         closeOnClick: true
     });
     $('#fullpage').fullpage({
-        responsiveWidth: 601,
+        responsiveWidth: 0,
         responsiveSlides: true,
         navigation: true,
         navigationPosition: 'right',
