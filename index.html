@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HerHack</title>
-    <!--<link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">-->
     <link rel="icon" type="image/png" href="./images/wtm.png">
-    <link href='https://fonts.googleapis.com/css?family=Product+Sans' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Product+Sans' rel='stylesheet' type='text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link rel="stylesheet" href="css/jquery.fullPage.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -19,6 +19,7 @@
     <li><a href="#aboutWTMAnchor">ABOUT US</a></li>
     <li><a href="#aboutHerHackAnchor">HER HACK</a></li>
     <li><a href="#prizesAnchor">PRIZES</a></li>
+    <li><a href="#herRegistrationAnchor">REGISTRATION</a></li>
     <li><a href="#herSponsorsAnchor">SPONSORS</a></li>
 </ul>
 <div id="fullpage">
@@ -28,6 +29,7 @@
             <li><a href="#aboutWTMAnchor">ABOUT US</a></li>
             <li><a href="#aboutHerHackAnchor">HER HACK</a></li>
             <li><a href="#prizesAnchor">PRIZES</a></li>
+            <li><a href="#herRegistrationAnchor">REGISTRATION</a></li>
             <li><a href="#herSponsorsAnchor">SPONSORS</a></li>
         </ul>
     </div>
@@ -124,8 +126,60 @@
 </div>
 <div id="herRegistration" class="section">
     <div class="row contentBox">
-        <div class="col s12 m6 push-m1 content">
-            <h2>COMING SOON!</h2>
+        <div class="col s12 m5 push-m1 content">
+            <div class="carousel carousel-slider center" data-indicators="true">
+                <div class="carousel-item white-text">
+                    <div class="input-field col s12">
+                        <h2 class="regHead" style="text-align: left;padding-left: 10px;">First Name</h2>
+                        <input id="fname" type="text" class="validate" required placeholder="Placeholder" autocomplete="off">
+                        <button class="btn waves-effect waves-light" name="action" onclick="next()">Next</button>
+                    </div>
+                </div>
+                <div class="carousel-item white-text">
+                    <div class="input-field col s12">
+                        <h2 class="regHead" style="text-align: left;padding-left: 10px;">Last Name</h2>
+                        <input id="lname" type="text" class="validate" required placeholder="Placeholder" autocomplete="off">
+                        <button class="btn waves-effect waves-light" name="action" onclick="next()">Next</button>
+                    </div>
+                </div>
+                <div class="carousel-item white-text">
+                    <div class="input-field col s12">
+                        <h2 class="regHead" style="text-align: left;padding-left: 10px;">Email</h2>
+                        <input id="email" type="email" class="validate" required placeholder="Placeholder" autocomplete="off">
+                        <button class="btn waves-effect waves-light" name="action" onclick="next()">Next</button>
+                    </div>
+                </div>
+                <div class="carousel-item white-text">
+                    <div class="input-field col s12">
+                        <h2 class="regHead" style="text-align: left;padding-left: 10px;">Mobile Number</h2>
+                        <input id="phone" type="number" class="validate" required placeholder="Placeholder" autocomplete="off">
+                        <button class="btn waves-effect waves-light" name="action" onclick="next()">Next</button>
+                    </div>
+                </div>
+                <div class="carousel-item white-text">
+                    <div class="input-field col s12">
+                        <h2 class="regHead" style="text-align: left;padding-left: 10px;">Registration Number</h2>
+                        <input id="reg" type="text" class="validate" required placeholder="Placeholder" autocomplete="off">
+                        <button class="btn waves-effect waves-light" name="action" onclick="next()">Next</button>
+                    </div>
+                </div>
+                <div class="carousel-item white-text">
+                    <div class="input-field col s12">
+                        <h2 class="regHead" style="text-align: left;padding-left: 10px;">Gender</h2>
+                            <select id="dropdown">
+                                <option value="" disabled selected>Select your option</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        <button class="btn waves-effect waves-light" name="action" onclick="next()">Next</button>
+                    </div>
+                </div>
+                <div class="carousel-item white-text">
+                    <div class="input-field col s12">
+                        <button class="btn waves-effect waves-light" type="submit" name="action" onclick="register()">Submit</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="row show-on-small hide-on-med-and-up">
@@ -133,11 +187,6 @@
             <h1>REGISTRATION</h1>
         </div>
     </div>
-    <!--<div class="row hide-on-small-only">-->
-    <!--<div class="col m2 push-m1 heading headCover">-->
-    <!--<h1>REGISTRATION</h1>-->
-    <!--</div>-->
-    <!--</div>-->
     <div class="triangleBottom hide-on-small-only">
         <div class="herHacktriangle" style="border-bottom-color: rgb(0, 196, 164);"></div>
         <div class="row">
