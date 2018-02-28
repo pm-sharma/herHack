@@ -135,7 +135,7 @@ function register() {
     var phone = $('#phone').val();
     var reg = $('#reg').val();
     var gender = $('#dropdown').val();
-    if (!fname || !lanme || !email || !phone || !reg || !gender) {
+    if (!fname || !lname || !email || !phone || !reg || !gender) {
         alert('Make sure all the fields are entered correctly');
     }
     else {

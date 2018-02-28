@@ -6,7 +6,7 @@
     <title>HerHack</title>
     <link rel="icon" type="image/png" href="./images/wtm.png">
     <link href="https://fonts.googleapis.com/css?family=Product+Sans' rel='stylesheet' type='text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
     <link rel="stylesheet" href="css/jquery.fullPage.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/animate.css">
@@ -131,35 +131,36 @@
                 <div class="carousel-item white-text">
                     <div class="input-field col s12">
                         <h2 class="regHead" style="text-align: left;padding-left: 10px;">First Name</h2>
-                        <input id="fname" type="text" class="validate" required placeholder="Placeholder" autocomplete="off">
+                        <input id="fname" type="text" class="validate browser-default" required placeholder="Placeholder" autocomplete="off">
                         <button class="btn waves-effect waves-light" name="action" onclick="next()">Next</button>
                     </div>
                 </div>
                 <div class="carousel-item white-text">
                     <div class="input-field col s12">
                         <h2 class="regHead" style="text-align: left;padding-left: 10px;">Last Name</h2>
-                        <input id="lname" type="text" class="validate" required placeholder="Placeholder" autocomplete="off">
+                        <input id="lname" type="text" class="validate browser-default" required placeholder="Placeholder" autocomplete="off">
                         <button class="btn waves-effect waves-light" name="action" onclick="next()">Next</button>
                     </div>
                 </div>
                 <div class="carousel-item white-text">
                     <div class="input-field col s12">
                         <h2 class="regHead" style="text-align: left;padding-left: 10px;">Email</h2>
-                        <input id="email" type="email" class="validate" required placeholder="Placeholder" autocomplete="off">
+                        <input id="email" type="email" class="validate browser-default" required placeholder="Placeholder" autocomplete="off">
+                        <label for="email"></label>
                         <button class="btn waves-effect waves-light" name="action" onclick="next()">Next</button>
                     </div>
                 </div>
                 <div class="carousel-item white-text">
                     <div class="input-field col s12">
                         <h2 class="regHead" style="text-align: left;padding-left: 10px;">Mobile Number</h2>
-                        <input id="phone" type="number" class="validate" required placeholder="Placeholder" autocomplete="off">
+                        <input id="phone" type="number" class="validate browser-default" required placeholder="Placeholder" autocomplete="off">
                         <button class="btn waves-effect waves-light" name="action" onclick="next()">Next</button>
                     </div>
                 </div>
                 <div class="carousel-item white-text">
                     <div class="input-field col s12">
                         <h2 class="regHead" style="text-align: left;padding-left: 10px;">Registration Number</h2>
-                        <input id="reg" type="text" class="validate" required placeholder="Placeholder" autocomplete="off">
+                        <input id="reg" type="text" class="validate browser-default" required placeholder="Placeholder" autocomplete="off">
                         <button class="btn waves-effect waves-light" name="action" onclick="next()">Next</button>
                     </div>
                 </div>
@@ -215,8 +216,10 @@
     <div class="row" style="position: absolute;width: 100vw;top:30vh;">
         <div class="col s12 m6 push-m3">
             <div class="row ">
-                <div class="col s6 m3 offset-s3" style="padding:20px;box-sizing: border-box;">
-                    <img src="images/jetbrains-blackandwhite.svg" class="img responsive-img">
+                <div class="col s6 m12 offset-s3" style="padding:20px;box-sizing: border-box;display: flex;flex-wrap: wrap;align-items: center;">
+                    <img src="images/balsamiq-logo.png" class="img" style="width: 40%;">
+                    <img src="images/jetbrains-blackandwhite.svg" class="img">
+                    <img src="images/HE.png" class="img">
                 </div>
             </div>
         </div>
@@ -224,7 +227,7 @@
 </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script src="js/materialize.min.js"></script>
 <script src="js/jquery.fullpage.extensions.min.js"></script>
 <script src="js/script.js"></script>
 </body>

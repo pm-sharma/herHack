@@ -179,13 +179,14 @@ nav {
 }
 
 .img {
-    height: 200px;
-    width: auto;
+    width: 30%;
+    height: auto;
     box-sizing: border-box;
     background-size: cover;
     background-position: center center;
     display: block;
     margin: 10px auto;
+    padding: 10px;
 
 }
 
@@ -256,6 +257,9 @@ input
     box-sizing: border-box!important;
     height: 52px!important;
     border-radius: 26px!important;
+    width: 100%;
+    background: transparent;
+    color: white;
 }
 input::-webkit-input-placeholder {
     color: white !important;
@@ -363,7 +367,8 @@ input:-ms-input-placeholder {
     }
 
     .img {
-        height: 120px;
+        width: 100%!important;
+        height: auto;
     }
 
     .WTMlogo {
