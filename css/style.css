@@ -351,6 +351,12 @@ input:-ms-input-placeholder {
 .btn:focus {
     background-color: white!important;
 }
+.sponsors
+{
+    position: absolute;
+    width: 100vw;
+    top:30vh;
+}
 @media only screen and (max-width: 600px) {
     /*.col.bot.s12.mobileHeadingBottom {*/
         /*bottom: 50px;*/
@@ -391,5 +397,9 @@ input:-ms-input-placeholder {
     }
     div#fp-nav {
         display: none;
+    }
+    .sponsors
+    {
+        top:10vh;
     }
 }
