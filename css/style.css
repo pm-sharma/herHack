@@ -316,6 +316,7 @@ input:-ms-input-placeholder {
     height: 52px;
     font-size: 2rem;
     margin-top:20px;
+    display: flex!important;
 }
 .select-wrapper input.select-dropdown{
     margin-bottom: 0!important;
@@ -323,7 +324,6 @@ input:-ms-input-placeholder {
 .btn:hover
 {
     background-color: white;
-    box-shadow:8px 12px 10px;
 }
 .select-wrapper span.caret
 {
