@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HerHack</title>
+    <script src="js/pace.min.js"></script>
+    <script>
+        Pace.once('done',()=>{
+           document.getElementById('fullpage').style.visibility='visible';
+        });
+    </script>
+    <link rel="stylesheet" href="css/pace-theme-corner-indicator.css">
     <link rel="icon" type="image/png" href="./images/wtm.png">
     <link href="https://fonts.googleapis.com/css?family=Product+Sans' rel='stylesheet' type='text/css">
     <link rel="stylesheet" href="css/materialize.min.css">
@@ -13,6 +20,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div id="loading" class="la-anim-10"></div>
 <a href="#" data-activates="mobile-demo" class="button-collapse hide-on-large-only"
    style="position: fixed;z-index: 990;padding: 20px;"><i class="material-icons" style="font-size: 2.5rem;color: white">menu</i></a>
 <ul class="side-nav" id="mobile-demo">
@@ -22,7 +30,7 @@
     <li><a href="#herRegistrationAnchor">REGISTRATION</a></li>
     <li><a href="#herSponsorsAnchor">SPONSORS</a></li>
 </ul>
-<div id="fullpage">
+<div id="fullpage" style="visibility: hidden;">
 <nav style="background-color: transparent;z-index: 50;">
     <div class="nav-wrapper">
         <ul class="right hide-on-med-and-down">
@@ -127,61 +135,56 @@
 <div id="herRegistration" class="section">
     <div class="row contentBox">
         <div class="col s12 m5 push-m1 content">
-            <h2>COMING SOON!</h2>
-            <!--<div class="carousel carousel-slider center" data-indicators="true">-->
-                <!--<div class="carousel-item white-text">-->
-                    <!--<div class="input-field col s12">-->
-                        <!--<h2 class="regHead" style="text-align: left;padding-left: 10px;">First Name</h2>-->
-                        <!--<input id="fname" type="text" class="validate browser-default" required placeholder="Placeholder" autocomplete="off">-->
-                        <!--<button class="btn waves-effect waves-light" name="action" onclick="next()">Next</button>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--<div class="carousel-item white-text">-->
-                    <!--<div class="input-field col s12">-->
-                        <!--<h2 class="regHead" style="text-align: left;padding-left: 10px;">Last Name</h2>-->
-                        <!--<input id="lname" type="text" class="validate browser-default" required placeholder="Placeholder" autocomplete="off">-->
-                        <!--<button class="btn waves-effect waves-light" name="action" onclick="next()">Next</button>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--<div class="carousel-item white-text">-->
-                    <!--<div class="input-field col s12">-->
-                        <!--<h2 class="regHead" style="text-align: left;padding-left: 10px;">Email</h2>-->
-                        <!--<input id="email" type="email" class="validate browser-default" required placeholder="Placeholder" autocomplete="off">-->
-                        <!--<label for="email"></label>-->
-                        <!--<button class="btn waves-effect waves-light" name="action" onclick="next()">Next</button>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--<div class="carousel-item white-text">-->
-                    <!--<div class="input-field col s12">-->
-                        <!--<h2 class="regHead" style="text-align: left;padding-left: 10px;">Mobile Number</h2>-->
-                        <!--<input id="phone" type="number" class="validate browser-default" required placeholder="Placeholder" autocomplete="off">-->
-                        <!--<button class="btn waves-effect waves-light" name="action" onclick="next()">Next</button>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--<div class="carousel-item white-text">-->
-                    <!--<div class="input-field col s12">-->
-                        <!--<h2 class="regHead" style="text-align: left;padding-left: 10px;">Registration Number</h2>-->
-                        <!--<input id="reg" type="text" class="validate browser-default" required placeholder="Placeholder" autocomplete="off">-->
-                        <!--<button class="btn waves-effect waves-light" name="action" onclick="next()">Next</button>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--<div class="carousel-item white-text">-->
-                    <!--<div class="input-field col s12">-->
-                        <!--<h2 class="regHead" style="text-align: left;padding-left: 10px;">Gender</h2>-->
-                            <!--<select id="dropdown">-->
-                                <!--<option value="" disabled selected>Select your option</option>-->
-                                <!--<option value="male">Male</option>-->
-                                <!--<option value="female">Female</option>-->
-                            <!--</select>-->
-                        <!--<button class="btn waves-effect waves-light" name="action" onclick="next()">Next</button>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--<div class="carousel-item white-text">-->
-                    <!--<div class="input-field col s12">-->
-                        <!--<button class="btn waves-effect waves-light" type="submit" name="action" onclick="register()">Submit</button>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
+            <!--<h2>COMING SOON!</h2>-->
+            <div id="regForm" class="carousel carousel-slider center" data-indicators="true">
+                <div class="carousel-item white-text">
+                    <div class="input-field col s12">
+                        <h2 class="regHead" style="text-align: left;">First Name</h2>
+                        <input id="fname" type="text" class="validate browser-default" required placeholder="Ex: Sarah" autocomplete="off">
+                        <button class="btn waves-effect waves-light" name="action" onclick="next()">Next</button>
+                    </div>
+                </div>
+                <div class="carousel-item white-text">
+                    <div class="input-field col s12">
+                        <h2 class="regHead" style="text-align: left;">Last Name</h2>
+                        <input id="lname" type="text" class="validate browser-default" required placeholder="Ex: Connor" autocomplete="off">
+                        <button class="btn waves-effect waves-light" name="action" onclick="next()">Next</button>
+                    </div>
+                </div>
+                <div class="carousel-item white-text">
+                    <div class="input-field col s12">
+                        <h2 class="regHead" style="text-align: left;">Email</h2>
+                        <input id="email" type="email" class="validate browser-default" required placeholder="Ex: skynet@gmail.com" autocomplete="off">
+                        <label for="email"></label>
+                        <button class="btn waves-effect waves-light" name="action" onclick="next()">Next</button>
+                    </div>
+                </div>
+                <div class="carousel-item white-text">
+                    <div class="input-field col s12">
+                        <h2 class="regHead" style="text-align: left;">Mobile Number</h2>
+                        <input id="phone" type="number" class="validate browser-default" required placeholder="Ex: 987654321" autocomplete="off">
+                        <button class="btn waves-effect waves-light" name="action" onclick="next()">Next</button>
+                    </div>
+                </div>
+                <div class="carousel-item white-text">
+                    <div class="input-field col s12">
+                        <h2 class="regHead" style="text-align: left;">Registration Number</h2>
+                        <input id="reg" type="text" class="validate browser-default" required placeholder="Ex: 16XXX1999" autocomplete="off">
+                        <button class="btn waves-effect waves-light" name="action" onclick="next()">Next</button>
+                    </div>
+                </div>
+                <div class="carousel-item white-text">
+                    <div class="input-field col s12">
+                        <h2 class="regHead" style="text-align: left;">Gender</h2>
+                            <select id="dropdown" data-beloworigin="true">
+                                <option value="" disabled selected>Select your option</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                        <button class="btn waves-effect waves-light" type="submit" name="action" onclick="register()">Submit</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="row show-on-small hide-on-med-and-up">
@@ -221,6 +224,7 @@
                     <img src="images/balsamiq.png" class="img" style="width: 40%;">
                     <img src="images/jetbrains-blackandwhite.svg" class="img">
                     <img src="images/HE_logo_white.png" class="img">
+                    <img src="images/docker.png" class="img">
                 </div>
             </div>
         </div>
