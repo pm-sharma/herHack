@@ -50,7 +50,7 @@ function register() {
     let email = $('#email').val();
     let phone = $('#phone').val();
     let regno = $('#reg').val();
-    let gender = $('#dropdown').val();
+    let gender = 'Female';
     const $loading =$('#loading');
     $loading.addClass('la-animate');
     callAPI({fname,lname,email,phone,regno,gender}).then((data)=>{
